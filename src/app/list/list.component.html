@@ -1,0 +1,23 @@
+<div class="container">
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">libelle</th>
+                    <th class="" colspan="2">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let departement of departements">
+                    <th scope="row">{{departement.id}}</th>
+                    <th scope="row">{{departement.libelle}}</th>
+                    <div>
+                        <td class="mx-1">Modifier</td>
+                        <td class="mx-1">Supprimer</td>
+                    </div>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

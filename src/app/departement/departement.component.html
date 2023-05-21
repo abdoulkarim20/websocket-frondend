@@ -1,0 +1,17 @@
+<p>departement works!</p>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="text-center">Enregistrer un departement</h4>
+        </div>
+        <div class="card-body">
+            <form [formGroup]="saveDepartement" (ngSubmit)="save()">
+                <div class="mb-3">
+                    <label for="departement" class="form-label">Libelle</label>
+                    <input type="text" formControlName="libelle" class="form-control" id="departement">
+                </div>
+                <button type="submit" class="btn btn-primary">Enregistrer</button>
+            </form>
+        </div>
+    </div>
+</div>
