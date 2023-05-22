@@ -19,6 +19,9 @@ export class ListComponent implements OnInit {
   ngOnInit(): void {
     this.getAllDepartements();
     this.stompService.subscribe('/topic/departements', (): any => {
+      /*Nous devons creer un tableau afin de creer des notification 
+      et les stocker dans le local storage afin qu'il soit aficher dans un 
+      tableau pour que l'utilisateur puisse les voir et les supprimer s'il veut*/
       this.getAllDepartements();
     })
   }
