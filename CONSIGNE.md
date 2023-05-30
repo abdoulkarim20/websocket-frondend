@@ -2,6 +2,7 @@
 ### Installer les dependences ci-dessous 
 1- npm i sockjs-client
 2- npm i @stomp/stompjs 
+3- npm i net -S
 ### Voir le dossier helpers pour implementer le service stomp.service.ts
 ### Injecter le service stomp.service.ts dans le app.module voir "app module pour plus de visibiliter"
 ### Voir le dossier departement pour voir l'implementation du websocket sur le composant.
